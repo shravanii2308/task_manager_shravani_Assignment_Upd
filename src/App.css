@@ -1,0 +1,105 @@
+/* src/App.css */
+body {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+}
+
+h1 {
+  color: #ff69b4;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+span.task-name {
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+button.edit-button,
+button.delete-button {
+  background-color: #3498db;
+  margin-left: 5px; 
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form textarea,
+form select,
+form button {
+  width: 100%;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  button {
+    font-size: 0.8rem;
+  }
+}
+.task-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px; 
+  margin: 0 auto;
+}
+
+.task-form label {
+  margin-bottom: 5px;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select {
+  margin-bottom: 10px;
+}
